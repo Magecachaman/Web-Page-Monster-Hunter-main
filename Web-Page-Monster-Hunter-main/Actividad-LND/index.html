@@ -4,8 +4,9 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="css/style.css">
   <title>Monster Hunter Monsters</title>
+
+  <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
@@ -20,10 +21,11 @@
   <nav>
     <a href="#">Tipos de Monstruos</a>
     <a href="#">Localidades</a>
-    <a href="custom-monsters.html">Crea tu propio monstruo</a>
+    <a href="#">Crea tu propio monstruo</a>
     <a id="hide-me">Ocultame!</a>
     <button id="toggle-button">Mostrar/Ocultar Bloque</button>
   </nav>
+
   <main id="main-container">
     <section id="parallax">
       <img src="img/plenty-weather-monsterhunterwilds.png" alt="background" id="background">
@@ -128,7 +130,7 @@
       <div id="third-main-container-content">
         <div class="main-container-photos" id="main-container-9">
           <div class="monster-name">Dodogama</div>
-          <div class="main-container-image">
+          <div class="main-container-image girar">
             <img class="content-photos zoom" src="img/mhw-dodogama-render.webp"
               alt="Photo of a monster from the game Monster Hunter Games">
           </div>
@@ -139,7 +141,7 @@
         </div>
         <div class="main-container-photos" id="main-container-10">
           <div class="monster-name">Mizutsune</div>
-          <div class="main-container-image">
+          <div class="main-container-image girar">
             <img class="content-photos zoom" src="img/mhw-mizutsune-render.webp"
               alt="Photo of a monster from the game Monster Hunter Games">
           </div>
@@ -150,7 +152,7 @@
         </div>
         <div class="main-container-photos" id="main-container-11">
           <div class="monster-name">Nergigante</div>
-          <div class="main-container-image">
+          <div class="main-container-image girar">
             <img class="content-photos zoom" src="img/mhw-render-nergigante.webp"
               alt="Photo of a monster from the game Monster Hunter Games">
           </div>
@@ -161,7 +163,7 @@
         </div>
         <div class="main-container-photos" id="main-container-12">
           <div class="monster-name">Brachydios</div>
-          <div class="main-container-image">
+          <div class="main-container-image girar">
             <img class="content-photos zoom" src="img/mhwi-brachydios-render.png"
               alt="Photo of a monster from the game Monster Hunter Games">
           </div>
@@ -221,7 +223,7 @@
     </div>
     <section id="form-and-display">
       <h2>Crea tu propio monstruo</h2>
-      <form action="custom-monsters.html" id="form-custom-monster">
+      <form action="#" id="form-custom-monster">
         <div>
           <label for="monster-name">Nombre:</label>
           <input type="text" name="monster-name" id="monster-name">
@@ -233,22 +235,67 @@
           <div><span id="monster-type-required-error">* Campo Obligatorio</span></div>
         </div>
         <div>
-          <label for="monster-weakness">Debilidades:</label>
-          <input type="text" name="monster-weakness" id="monster-weakness">
-          <div><span id="monster-weakness-required-error">* Campo Obligatorio</span></div>
-        </div>
-        <div>
           <label for="monster-element">Elemento:</label>
           <input type="text" name="monster-element" id="monster-element">
           <div><span id="monster-element-required-error">* Campo Obligatorio</span></div>
         </div>
-        <input type="submit" value="Enviar">
+        <div>
+          <label for="monster-weakness">Debilidades:</label>
+          <input type="text" name="monster-weakness" id="monster-weakness">
+          <div><span id="monster-weakness-required-error">* Campo Obligatorio</span></div>
+        </div>
+        <input class="button-form" type="submit" value="Enviar">
       </form>
       <h2 id="monsters-agenda">Listado de Monstruos realizados</h2>
-      <ul id="monsters-list">
+      <table id="monsters-list">
 
-      </ul>
+      </table>
     </section>
+    <div class="h3-container">
+      <h3>Locations</h3>
+    </div>
+    <div id="locations-photos-section">
+      <div>
+        <img class="locations-photos" src="img/grand-hub-view-mhwilds-wiki-guide.jpg" alt="Grand-Hub">
+        <p class="location-description">In Grand Hub, you can interact with other hunters in arm-wrestling and Barrel
+          Bowling, which can potentially give you some hunting items and Pendants. You can also enjoy meals together.
+          The Diva occasionally appears at night, filling the area with beautiful music in offering. Be sure to take a
+          listen when you get the chance.</p>
+      </div>
+      <div>
+        <img class="locations-photos" src="img/mhwilds-scarlet-forest.webp" alt="Scarlet Forest">
+        <p class="location-description">Scarlet Forest is a Location in Monster Hunter Wilds (MHWilds). This dense,
+          sprawling woodland is renowned for its striking crimson foliage, which casts an eerie, otherworldly glow over
+          the landscape. The trees, their leaves perpetually tinted with shades of red and orange, create a canopy that
+          filters the sunlight into a perpetual twilight.</p>
+      </div>
+    </div>
+    <div class="h3-container">
+      <h3>Personajes Principales</h3>
+    </div>
+    <div id="container-characters">
+      <div class="container-characters-photos reveal">
+        <img class="character-photos" src="img/character-alma.png" alt="weapon from the game">
+        <p class="character-description">The hunter's "Handler"—one who manages monster hunt requests, permissions, and
+          quests. She'll accompany you out on quests and provide valuable support and knowledge.
+          A specialist in cultural anthropology and an avid archaeologist. </p>
+      </div>
+      <div class="container-characters-photos reveal">
+        <img class="character-photos" src="img/character-gema.png" alt="weapon from the game">
+        <p class="character-description">A smithy with the Research Commission. She'll take care of all your weapon and
+          armor crafting needs! </p>
+      </div>
+      <div class="container-characters-photos reveal">
+        <img class="character-photos" src="img/character-nata.png" alt="weapon from the game">
+        <p class="character-description">"I was still hoping that I imagined the whole thing..." A mysterious young boy
+          that accompanies you on your journey. </p>
+      </div>
+      <div class="container-characters-photos reveal">
+        <img class="character-photos" src="img/character-palico.png" alt="weapon from the game">
+        <p class="character-description">A Felyne—a cat-like creature fully capable of speaking with people—who is the
+          hunter's trusted "Palico" partner. They'll provide invaluable hunting AND moral support! </p>
+      </div>
+    </div>
   </main>
   <footer>
     <div class="footer-column">
@@ -259,8 +306,6 @@
           <path
             d="M3.468 1.948C5.303 3.325 7.276 6.118 8 7.616c.725-1.498 2.698-4.29 4.532-5.668C13.855.955 16 .186 16 2.632c0 .489-.28 4.105-.444 4.692-.572 2.04-2.653 2.561-4.504 2.246 3.236.551 4.06 2.375 2.281 4.2-3.376 3.464-4.852-.87-5.23-1.98-.07-.204-.103-.3-.103-.218 0-.081-.033.014-.102.218-.379 1.11-1.855 5.444-5.231 1.98-1.778-1.825-.955-3.65 2.28-4.2-1.85.315-3.932-.205-4.503-2.246C.28 6.737 0 3.12 0 2.632 0 .186 2.145.955 3.468 1.948" />
         </svg>
-
-
         <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-facebook"
           viewBox="0 0 16 16">
           <path
@@ -283,17 +328,27 @@
         </svg>
       </div>
       <div id="footer-links">
-        <div>
+        <div id="footer-home">
+          <h3>Inicio</h3>
           <ul>
             <li>Home</li>
             <li>Contactos</li>
             <li>Email</li>
           </ul>
         </div>
-        <div>
+        <div id="footer-help">
+          <h3>Ayudas</h3>
           <ul>
             <li>Trabaja con nosotros</li>
-            <li>Tienda Online</li>
+            <li>Contactanos</li>
+            <li>Atención al Cliente</li>
+          </ul>
+        </div>
+        <div id="footer-bussiness">
+          <h3>Empresa</h3>
+          <ul>
+            <li>Acerca de nosotros</li>
+            <li>Nuestra Mision</li>
             <li>Dirección</li>
           </ul>
         </div>

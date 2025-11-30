@@ -6,9 +6,9 @@ let text = document.getElementById("text");
 window.addEventListener('scroll', parallax);
 
 function parallax() {
-  const value = window.scrollY;
-  background.style.top = value * 0.5 + 'px';
+  const VALUE = window.scrollY;
+  background.style.top = VALUE * 0.5 + 'px';
   // liebre.style.left = value * 0.5 + 'px';
   // seikret.style.right = value * 0.5 + 'px';
-  text.style.top = value * 1 + 'px';
+  text.style.top = VALUE * 1 + 'px';
 }
